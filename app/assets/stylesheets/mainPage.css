@@ -1,3 +1,153 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+.container{
+  width: 100%;
+  margin:0;
+  padding:0;
+  
+}
+.background-main{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.597), rgba(0,0,0,0.597)) ,url(https://crf.nitk.ac.in/images/caro_new.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: aliceblue;
+  overflow-x:hidden;
+  width:100vw;
+
+}
+.cont-2{
+  transform: translate(-50%, -10%); /* Center the text precisely */
+  position:relative;
+  top:50%;
+  left:50%;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+
+}
+.col-12{
+  flex: 0 0 auto;
+  width: 100%
+}
+.announce-btn{
+  width: 15em;
+  border-radius: 2em;
+  height:2em;
+  margin: 0 0 0 0;
+
+  
+}
+.head-btn{
+  width: 10em;
+  border-radius: 2em;
+  width: 7em;
+  height: 2em;
+  margin: 20px 10px 0 0;
+  
+ 
+
+}
+.crf-heading{
+  margin: 12px 0 0 0;
+  
+
+}
+h1{
+  font-size: 4rem;
+}
+.sub-title{
+  margin: 35px 0 10px 0;
+  
+
+}
+
+
+
+/* features section begins*/
+.wrap{
+  min-width:100vw;
+  background: rgba(4, 4, 8, 0.689);
+  background: radial-gradient(
+    circle,
+    rgb(52, 52, 70) 0%,
+    rgb(11, 15, 11) 100%
+  );
+  min-height:100vh;
+  padding: 0em 0 3em 0;
+  
+
+
+}
+
+
+.features-section{
+  overflow-x: hidden;
+
+  display:flex;
+  flex-direction:column;
+  background: rgba(4, 4, 8, 0.689);
+  background: radial-gradient(
+    circle,
+    rgb(52, 52, 70) 0%,
+    rgb(11, 15, 11) 100%
+  );
+  min-height: 100vh;
+  
+  width: 100%;
+
+}
+
+.features-head{
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  text-align:center;
+  color:white;
+  margin-top: 1em;
+
+}
+.sub-feature{
+    text-align:center;
+    font-size: 1.7em;
+    margin-top:1em;
+    margin-bottom:1em;
+    color:white;
+  }
+
+.features-content{
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  flex-direction: row;
+}
+.fac-icon{
+  height:2em;
+}
+.features{
+  color:white;
+  width:33%;
+  font-size:1.2em;
+  margin-right: 1em;
+  padding-left: 1em;
+  flex:1;
+  text-align:center;
+  
+}
+
+/* features section ends*/
+
+    
 * {
   margin: 0%;
   padding: 0%;

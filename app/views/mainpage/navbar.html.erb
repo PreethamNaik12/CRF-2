@@ -2,20 +2,20 @@
 <%= stylesheet_link_tag "newLand.css" %>
 <%= stylesheet_link_tag "newLandResp.css" %>
 
-   
+
 <%=render "partials/newNav"%>
-   
 
         <div id="content" style="height: 100vh;"></div>
     </div>
 
+    <!--Call to action section-->
     <div id="call_to_action" class="font_PT_sans">
         <h1 class="cta_heading fw-bold">Explore. Innovate. Transform.</h1>
         <p class="cta_text">Unleash innovation at CRF 🚀</p>
         <p> Join our dynamic community driving cutting-edge research and solutions for a brighter future.</p>
         <div id="cta_btns">
-            <button class="btn btn-primary" id="cta_btn_1">Book Slot</button>
-            <button class="btn btn-light" id="cta_btn_2">Explore labs <svg xmlns="http://www.w3.org/2000/svg" width="16"
+            <%= link_to "Book slot", new_user_session_path, class:'btn btn-primary' %>
+            <button class="btn btn-light" id="cta_btn_2"><%= link_to "Explore", mainpage_facility_path %><svg xmlns="http://www.w3.org/2000/svg" width="16"
                     height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
@@ -23,12 +23,13 @@
         </div>
     </div>
 
-
+<!--partiail to footer-->
 <%=render "partials/newFooter"%>
 
 
 
-    <script>
+<script> //to toggle profile options
+
         let user_img_1 = document.getElementById("user_img_1");
         let user_img_2 = document.getElementById("user_img_2");
         let profile_options = document.getElementById("profile_options");
@@ -56,4 +57,4 @@
             count++
         })
 
-    </script>
+</script>

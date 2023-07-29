@@ -8,20 +8,25 @@
 
 .font_PT_sans {
     font-family: 'Jost', sans-serif;
+    /* position:absolute;
+    top:0%; */
 }
 
 .navbar {
-    background-color: #ffffff00!important;
+    width:100vw;
+    
+    
 }
 
 .nav-link {
     margin: 0 1em;
-    background-color: white;
+    color:white;
     border-radius: 8px;
 }
 .nav-link:hover {
     background-color: #3f5ac9;
     color: aliceblue;
+    padding-right: 10px;
 }
 
 .logo-div {
@@ -30,6 +35,10 @@
 
 .logo-div img {
     width: 25%;
+}
+
+.text-center {
+    font-weight: 600
 }
 
 

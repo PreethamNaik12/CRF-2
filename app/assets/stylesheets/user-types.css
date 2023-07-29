@@ -12,6 +12,9 @@ body{
     padding: 1em;
 }
 
+.bg-body-tertiary {
+    background: color #e9ecef !important;
+}
 .user-btns{
     display: flex;
     flex-direction: row;
@@ -32,13 +35,22 @@ body{
     background-color: #fff;
     padding: 1em;
     border-radius: 1em;
+    font-size: 17px;
+    letter-spacing: 0.8px;
+}
+.internal-user-def p {
+    margin-bottom: 0;
 }
 
 .external-user-def{
-    font-size: 1rem;
+    font-size: 17px;
     background-color: #fff;
     padding: 0.8em;
-    border-radius: 1em;
+    border-radius: 17px;
+    letter-spacing: 0.8px;
+}
+.external-user-def p {
+    margin-bottom: 0;
 }
 
 .steps-img{
@@ -51,10 +63,11 @@ body{
 }
 
 .int-procedure{
-    font-size: 1rem;
+    font-size: 17px;
     background-color: #fff;
     border-radius: 1em;
     padding: 1em;
+    letter-spacing: 0.8px;
 }
 
 .ext-img{
@@ -70,19 +83,20 @@ body{
     background-color: #fff;
     padding: 1em;
     border-radius: 15px;
+    letter-spacing: 0.8px;
 }
 
 
 /* switcher */
 
 #switcher-div {
-  display: flex;
-  width: 90%;
-  margin: 1em auto;
-  border: 2px solid;
-  border-radius: 1em;
-  padding: 0.5em;
-  background-color: #fff;
+    display: flex;
+    width: 90%;
+    margin: 1em auto;
+    border: 2px solid;
+    border-radius: 1em;
+    padding: 0.5em;
+    background-color: #fff;
 }
 
 #nitk {
@@ -101,22 +115,22 @@ body{
     cursor: pointer;
 }
 #ext-indus {
-  width: 33%;
-  text-align: center;
-  padding: 1em;
-  border-radius: 1em;
-  cursor: pointer;
+    width: 33%;
+    text-align: center;
+    padding: 1em;
+    border-radius: 1em;
+    cursor: pointer;
 }
 /* Switcher ends */
 
   /* special= used for the purpose of JS */
-  .vis {
-      display: none;
-    }
-  
+.vis {
+    display: none;
+}
+
     .backcolor {
-      background: #3f5ac9;
-      color: #ddf1fb;
+    background: #3f5ac9;
+    color: #ddf1fb;
     }
 
 @media  (max-width: 612px) {
@@ -127,12 +141,10 @@ body{
         padding: 1.2em;
     }
 
-    #IntFlowDigram{
-        height: 212x;
-        width: 400px;
-    }
-
-    
+#IntFlowDigram{
+    height: 212x;
+    width: 400px;
+}
 
     #external-acad{
         height: 212x;

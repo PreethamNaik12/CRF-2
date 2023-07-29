@@ -45,11 +45,11 @@
     {
       "name1": "Prof. Prasad Krishna",
       "role1": "Director, NITK",
-      "photoURL1": "https://github.com/Shivyoddha/CRF/blob/main/app/assets/images/faculty/faculty/CPDevatha.jpg?raw=true",
+      "photoURL1": "https://github.com/Shivyoddha/CRF/blob/main/app/assets/images/adm-img/adm-img/DirectorNITK.jpg?raw=true",
 
       "name2": "Dr. M. N. Satyanarayan",
       "role2": "Chairman CRF NITK",
-      "photoURL2": "https://github.com/Shivyoddha/CRF/blob/main/app/assets/images/faculty/faculty/CPDevatha.jpg?raw=true"
+      "photoURL2": "https://github.com/Shivyoddha/CRF/blob/main/app/assets/images/adm-img/adm-img/Chairman.jpg?raw=true"
     },
     {
       "name1": "Prof. Satybodh M. Kulkarni",
@@ -92,7 +92,8 @@
                             <p class="meet_name fw-bold">${element.name2}</p>
                             <p class="meet_role role_color">${element.role2}</p>
                           </div>
-                        </div>`;
+                        </div>
+                        `;
 
 
           div.setAttribute('class', 'divdiv');
@@ -107,7 +108,7 @@
         {
           "name": "Dr. Mohammad Rizwanur Rahman",
           "role": "Dept of MME",
-          "photoURL": "https://github.com/Shivyoddha/CRF/blob/main/app/assets/images/faculty/faculty/CPDevatha.jpg?raw=true"
+          "photoURL": "https://github.com/Shivyoddha/CRF/blob/main/app/assets/images/adm-img/adm-img/M%20R%20Rahman.png?raw=true"
         },
         {
           "name": "Dr. Keyur Raval",
@@ -419,26 +420,18 @@
     }
   ]
   
-        faculty.forEach((element, index) => {
-          const div = document.createElement('div');
-          div.innerHTML = `<div class="core_members">
-                              <div class="core_img_div"><img src="${element.photoURL}" alt=""></div>
-                              <center>
-                                <div class="core_text">
-                                  <p class="core_name fw-bold">${element.name}</p>
-                                  <p class="core_role">${element.department}</p>
-                                </div>
-                              </center>
-                            </div>`;
-
-          document.getElementById('faculty_div').appendChild(div);//inject the data to faculty div
-        });
-      
-
+  faculty.forEach((element, index) => {
+    const div = document.createElement('div');
+    div.innerHTML = ` <div class="core_members">
+                        <div class="core_img_div"><img src="${element.photoURL}" alt=""></div>
+                        <center>
+                          <div class="core_text">
+                            <p class="core_name fw-bold">${element.name}</p>
+                            <p class="core_role">${element.department}</p>
+                          </div>
+                        </center>
+                      </div>`;
+    document.getElementById('faculty_div').appendChild(div);//inject the data to faculty div
+  });
 
   </script>
-
-
-
-
-  

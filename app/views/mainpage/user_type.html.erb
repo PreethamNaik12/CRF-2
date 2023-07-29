@@ -1,200 +1,207 @@
 <%= stylesheet_link_tag "user-types" %>
 <%= stylesheet_link_tag "loginFeatures" %>
+<%= stylesheet_link_tag "newLand" %>
 
-<%=render "partials/loginHeading" %>
-
-<!--switcher is given here-->
-<div id="switcher-div">
-  <div id="nitk" class="backcolor">
-    <span>Internal User (NITK)</span>
-  </div>
-  <div id="ext-acad">
-    <span>External Users from Academia</span>
-  </div>
-  <div id="ext-indus">
-    <span>External Users from Industries</span>
-  </div>
-</div>
-
-
-<div id="internal-u">
-    <div class="container mt-3">
-            <!-- <div class="user-btns">
-                <a  id="button" href="exter-acad.html" class="btn btn-primary" role="button" data-bs-toggle="button">External User</a>
-                <a  id="button" href="exter-industry.html" class="btn btn-primary" role="button" data-bs-toggle="button">External User (Industries)</a>
-                <a  id="button" href="inter-user.html" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Internal User</a>
-            </div> -->
-
-            <div class="internal-user">
-                <h1 class="text-center fw-bold font-unbounded">
-                    Internal User
-                </h1>
-            <div class="internal-user-def">
-                <p>A user is considered as an Internal User when the concerned Head of the Department authenticates his/her affiliation to that Department. Registered students of all types (B.Tech/M.Tech/Ph.D/M.Tech (res), Full time and Part time) students come under this category. Faculty, JRF and SRF working in the projects at the Institute also come under this group.</p>
-            </div>
-
-                <h3 class="text-center fw-bold mt-3">Procedure for Slot booking</h3>
-                    <div class="steps-img">
-                        <%=image_tag 'mainUsers\IntFlowDigram.png',id:"IntFlowDigram" %>
-                    </div>
-
-                    <div class="int-procedure">
-                        <p>1. User has to decide the facility within the system for his research work. He/She can do with the help of his/her advisor. A brief of the facility within the system is available at the Facilities Tab. He/She can also look at the price of the facilities for the same purpose</p>
-
-                        <p>2. Slot booking form available under the BOOK SLOT tab. Please note each machine has it’s own slot booking form. It is absolutely necessary to use appropriate booking form. Booking form for internal user is different than the form for external users.</p>
-
-                        <p>3. Fill up all the entries correctly. Please don’t keep any entries blank. Ask your Guide/Supervisor and Equipment Faculty in-charge to sign at the appropriate places. All mentioned authentication's is absolutely essential to get the benefit of internal user. Otherwise they will not get a slot.</p>
-
-                        <p>4. Fill up all the entries correctly. Please don’t keep any entries blank. Ask your Guide/Supervisor and Equipment Faculty in-charge to sign at the appropriate places. All mentioned authentication's is absolutely essential to get the benefit of internal user. Otherwise they will not get a slot.</p>
-
-                        <p>5.  Each sample should be tagged properly with application no. Users are requested to collect sample same day after testing, CRF will not be resposible for sample misplacement.</p>
-
-                        <p>6.  Within Lab, Photography/Videography is strictly prohibited without operator permission</p>
-
-                        <p>7. The Users are required to follow the instructions related to machine safety, sample preparation guidelines applicable to particular machines, etc. For CRF staff, keeping machine intact is equally important as the analyses of samples.</p>
-
-                        <p>8. <b>Payment: Book adjustment would be done based on the usage. Hence, users are requested to use the facility carefully, especially those which are of extensive demand. Supervisor/ Student are request to mention Debit head in slot form. (i) CPDA (ii) Project fund (project name) (iii) Student Contingency (iv) Dept. operating cost</b></p>
-
-                        <p>9. All the users are requested to cooperate with the CRF staff. In the event of any serious grievance students can mail to CRF Chairman, giving full details.</p>
-
-                        <p>10. Note: Sample preparation is not covered in machine charges. It is the responsibility of the users to prepare samples and get into CRF at correct time. If slot is given and user is not able to use the slot due to sample is not ready or prepared badly, CRF is not responsible.</p>
-                    </div>
-
-
-
-
-
-            </div>
-
-        </div>
-</div>
-
-<div id="ext-acad-section" class="vis">
-    <div class="container mt-3">
-            <!-- <div class="user-btns">
-                <a href="exter-acad.html" class="btn btn-primary" role="button" data-bs-toggle="button">External User</a>
-                <a href="exter-industry.html" class="btn btn-primary" role="button" data-bs-toggle="button">External User (Insustries)</a>
-                <a href="inter-user.html" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Inrernal User</a>
-            </div> -->
-
-            <div class="external-user">
-                <h1 class="text-center fw-bold font-unbounded">
-                    External User (Academia)
-                </h1>
-                <div class="external-user-def mb-4 mt-4">
-                    <p class="text-center">Users affiliated to education institutes, including universities come under this category. Govt affiliated research labs having a MoU with NITK also come under this group.</p>
+<div id = 'cont' class= "font_PT_sans" style="background-color:#e9ecef">
+    <%=render "partials/newNav" %>
+    
+    <!--switcher is given here-->
+    <div id="switcher-div">
+      <div id="nitk" class="backcolor">
+        <span>Internal User (NITK)</span>
+      </div>
+      <div id="ext-acad">
+        <span>External Users from Academia</span>
+      </div>
+      <div id="ext-indus">
+        <span>External Users from Industries</span>
+      </div>
+    </div>
+    
+    
+    <div id="internal-u">
+        <div class="container mt-3">
+                <!-- <div class="user-btns">
+                    <a  id="button" href="exter-acad.html" class="btn btn-primary" role="button" data-bs-toggle="button">External User</a>
+                    <a  id="button" href="exter-industry.html" class="btn btn-primary" role="button" data-bs-toggle="button">External User (Industries)</a>
+                    <a  id="button" href="inter-user.html" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Internal User</a>
+                </div> -->
+    
+                <div class="internal-user">
+                    <h1 class="text-center fw-bold font_PT_sans">
+                        Internal User
+                    </h1>
+                <div class="internal-user-def ">
+                    <p class="font_PT_sans">A user is considered as an Internal User when the concerned Head of the Department authenticates his/her affiliation to that Department. Registered students of all types (B.Tech/M.Tech/Ph.D/M.Tech (res), Full time and Part time) students come under this category. Faculty, JRF and SRF working in the projects at the Institute also come under this group.</p>
                 </div>
-
-
-                <h3 class="text-center fw-bold">Procedure for Slot booking</h3>
-                    <div class="steps-img">
-                        <%=image_tag 'mainUsers\ExtAcadDigram.png',id:"external-acad" %>
-                    </div>
-
-                    <div class="ext-procedure">
-                        <p>1. Slot booking form available under the BOOK SLOT tab. Please note each machine has it’s own slot booking form.</p>
-
-                        <p>2. Fill up the form with the details and submit along with the Request letter. Request letter should be forwarded/ recommended by the section head or institutional head.</p>
-
-                        <p>3. Scanned copies of the request letter along with slot form should be sent to booking.crf@nitk.edu.in. Samples of hazardous, poisonous and biological nature should be explicitly stated.</p>
-
-                        <p>4. An email communication will be sent for the slot date/time allotment booking. Only allotted users will be sent email. Users are requested to send the samples in time (for some facilities, samples need to be sent in advance). Once booked, last minute cancellation is strictly forbidden.</p>
-
-                        <p>5.  Data and samples will be given after the payment. For details of costs for different tests, it is suggested to look into the respective facilities.</p>
-
-                        <p>6.  If the user wants to visit the CRF during analysis, it is suggested that they should come with his ID card/Aadhar card and the email confirmation for identification purpose.</p>
-
-                        <p>7. The users are required to follow the instructions related to machine safety, sample preparation guidelines applicable to particular machines, etc. For CRF staff, keeping machine intact is equally important as the analyses of samples.</p>
-
-                        <p>8.  Sample preparation is not covered in machine charges. It is the responsibility of the user to prepare samples and get into CRF at correct time. If slot is given and user is not able to use the slot due to sample is not ready or prepared badly, CRF will not be responsible.</p>
-
-                        <p>9.   All the users are requested to cooperate with the CRF staff. In the event of any serious grievance users can to mail to CRF Chairman, giving full details</p>
-
-                        <p>10. For a few facilities, sample preparation tools are available at CRF. These costs will be separate.</p>
-
-                        <p>11. There will be additional GST charges. The GST value will be as per the prevailing rules.</p>
-
-                        <p>12. No unfair means are entertained at CRF. If done, please bring it to the notice of the Chairman-CRF.</p>
-
-                        <p>13. If any facility is booked and analysis is could not be done, beyond the limits of CRF personal, CRF cannot be held responsible in any way.</p>
-
-
-
-                    </div>
-
-
-
-
-
-            </div>
-
-        </div>
-</div>
-
-<div id="ext-indus-section" class="vis">
-    <div class="container mt-3">
-            <!-- <div class="user-btns">
-                <a href="exter-acad.html" class="btn btn-primary" role="button" data-bs-toggle="button">External User</a>
-                <a href="exter-industry.html" class="btn btn-primary" role="button" data-bs-toggle="button">External User (Insustries)</a>
-                <a href="inter-user.html" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Inrernal User</a>
-            </div> -->
-
-            <div class="external-user">
-                <h1 class="text-center fw-bold font-unbounded">
-                    External User (Industries)
-                </h1>
-                <div class="external-user-def mb-4 mt-4">
-                    <p class="text-center">All users affiliated to institutions/industries working on commercial basis come under this category.</p>
+    
+                    <h3 class="text-center fw-bold mt-3">Procedure for Slot booking</h3>
+                        <div class="steps-img">
+                            <%=image_tag 'mainUsers\IntFlowDigram.png',id:"IntFlowDigram" %>
+                        </div>
+    
+                        <div class="int-procedure">
+                            <p>1. User has to decide the facility within the system for his research work. He/She can do with the help of his/her advisor. A brief of the facility within the system is available at the Facilities Tab. He/She can also look at the price of the facilities for the same purpose</p>
+    
+                            <p>2. Slot booking form available under the BOOK SLOT tab. Please note each machine has it’s own slot booking form. It is absolutely necessary to use appropriate booking form. Booking form for internal user is different than the form for external users.</p>
+    
+                            <p>3. Fill up all the entries correctly. Please don’t keep any entries blank. Ask your Guide/Supervisor and Equipment Faculty in-charge to sign at the appropriate places. All mentioned authentication's is absolutely essential to get the benefit of internal user. Otherwise they will not get a slot.</p>
+    
+                            <p>4. Fill up all the entries correctly. Please don’t keep any entries blank. Ask your Guide/Supervisor and Equipment Faculty in-charge to sign at the appropriate places. All mentioned authentication's is absolutely essential to get the benefit of internal user. Otherwise they will not get a slot.</p>
+    
+                            <p>5.  Each sample should be tagged properly with application no. Users are requested to collect sample same day after testing, CRF will not be resposible for sample misplacement.</p>
+    
+                            <p>6.  Within Lab, Photography/Videography is strictly prohibited without operator permission</p>
+    
+                            <p>7. The Users are required to follow the instructions related to machine safety, sample preparation guidelines applicable to particular machines, etc. For CRF staff, keeping machine intact is equally important as the analyses of samples.</p>
+    
+                            <p>8. <b>Payment: Book adjustment would be done based on the usage. Hence, users are requested to use the facility carefully, especially those which are of extensive demand. Supervisor/ Student are request to mention Debit head in slot form. (i) CPDA (ii) Project fund (project name) (iii) Student Contingency (iv) Dept. operating cost</b></p>
+    
+                            <p>9. All the users are requested to cooperate with the CRF staff. In the event of any serious grievance students can mail to CRF Chairman, giving full details.</p>
+    
+                            <p>10. Note: Sample preparation is not covered in machine charges. It is the responsibility of the users to prepare samples and get into CRF at correct time. If slot is given and user is not able to use the slot due to sample is not ready or prepared badly, CRF is not responsible.</p>
+                        </div>
+    
+    
+    
+    
+    
                 </div>
-
-                <h3 class="text-center fw-bold">Procedure for Slot booking</h3>
-                    <div class="steps-img">
-                        <%=image_tag 'mainUsers\ExtIndusFlow.png' %>
-                    </div>
-
-                    <div class="ext-procedure">
-                        <p>1. Slot booking form available under the BOOK SLOT tab. Please note each machine has it’s own slot booking form.</p>
-
-                        <p>2. Fill up the form with the details and submit along with the Request letter. Request letter should be forwarded/ recommended by the section head or institutional head.</p>
-
-                        <p>3. Scanned copies of the request letter along with slot form should be sent to booking.crf@nitk.edu.in. Samples of hazardous, poisonous and biological nature should be explicitly stated.</p>
-
-                        <p>4. An email communication will be sent for the slot date/time allotment booking. Only allotted users will be sent email. Users are requested to send the samples in time (for some facilities, samples need to be sent in advance). Once booked, last minute cancellation is strictly forbidden.</p>
-
-                        <p>5.  Data and samples will be given after the payment. For details of costs for different tests, it is suggested to look into the respective facilities.</p>
-
-                        <p>6.  If the user wants to visit the CRF during analysis, it is suggested that they should come with his ID card/Aadhar card and the email confirmation for identification purpose.</p>
-
-                        <p>7. The users are required to follow the instructions related to machine safety, sample preparation guidelines applicable to particular machines, etc. For CRF staff, keeping machine intact is equally important as the analyses of samples.</p>
-
-                        <p>8.  Sample preparation is not covered in machine charges. It is the responsibility of the user to prepare samples and get into CRF at correct time. If slot is given and user is not able to use the slot due to sample is not ready or prepared badly, CRF will not be responsible.</p>
-
-                        <p>9.   All the users are requested to cooperate with the CRF staff. In the event of any serious grievance users can to mail to CRF Chairman, giving full details</p>
-
-                        <p>10. For a few facilities, sample preparation tools are available at CRF. These costs will be separate.</p>
-
-                        <p>11. There will be additional GST charges. The GST value will be as per the prevailing rules.</p>
-
-                        <p>12. No unfair means are entertained at CRF. If done, please bring it to the notice of the Chairman-CRF.</p>
-
-                        <p>13. If any facility is booked and analysis is could not be done, beyond the limits of CRF personal, CRF cannot be held responsible in any way.</p>
-
-
-
-                    </div>
-
-
-
-
-
+    
             </div>
-
-        </div>
+    </div>
+    
+    <div id="ext-acad-section" class="vis">
+        <div class="container mt-3">
+                <!-- <div class="user-btns">
+                    <a href="exter-acad.html" class="btn btn-primary" role="button" data-bs-toggle="button">External User</a>
+                    <a href="exter-industry.html" class="btn btn-primary" role="button" data-bs-toggle="button">External User (Insustries)</a>
+                    <a href="inter-user.html" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Inrernal User</a>
+                </div> -->
+    
+                <div class="external-user">
+                    <h1 class="text-center fw-bold font_PT_sans">
+                        External User (Academia)
+                    </h1>
+                    <div class="external-user-def mb-4 mt-4">
+                        <center>
+                            <p class="font_PT_sans">Users affiliated to education institutes, including universities come under this category. Govt affiliated research labs having a MoU with NITK also come under this group.</p>
+                        </center>
+                    </div>
+    
+    
+                    <h3 class="text-center fw-bold">Procedure for Slot booking</h3>
+                        <div class="steps-img">
+                            <%=image_tag 'mainUsers\ExtAcadDigram.png',id:"external-acad" %>
+                        </div>
+    
+                        <div class="ext-procedure">
+                            <p>1. Slot booking form available under the BOOK SLOT tab. Please note each machine has it’s own slot booking form.</p>
+    
+                            <p>2. Fill up the form with the details and submit along with the Request letter. Request letter should be forwarded/ recommended by the section head or institutional head.</p>
+    
+                            <p>3. Scanned copies of the request letter along with slot form should be sent to booking.crf@nitk.edu.in. Samples of hazardous, poisonous and biological nature should be explicitly stated.</p>
+    
+                            <p>4. An email communication will be sent for the slot date/time allotment booking. Only allotted users will be sent email. Users are requested to send the samples in time (for some facilities, samples need to be sent in advance). Once booked, last minute cancellation is strictly forbidden.</p>
+    
+                            <p>5.  Data and samples will be given after the payment. For details of costs for different tests, it is suggested to look into the respective facilities.</p>
+    
+                            <p>6.  If the user wants to visit the CRF during analysis, it is suggested that they should come with his ID card/Aadhar card and the email confirmation for identification purpose.</p>
+    
+                            <p>7. The users are required to follow the instructions related to machine safety, sample preparation guidelines applicable to particular machines, etc. For CRF staff, keeping machine intact is equally important as the analyses of samples.</p>
+    
+                            <p>8.  Sample preparation is not covered in machine charges. It is the responsibility of the user to prepare samples and get into CRF at correct time. If slot is given and user is not able to use the slot due to sample is not ready or prepared badly, CRF will not be responsible.</p>
+    
+                            <p>9.   All the users are requested to cooperate with the CRF staff. In the event of any serious grievance users can to mail to CRF Chairman, giving full details</p>
+    
+                            <p>10. For a few facilities, sample preparation tools are available at CRF. These costs will be separate.</p>
+    
+                            <p>11. There will be additional GST charges. The GST value will be as per the prevailing rules.</p>
+    
+                            <p>12. No unfair means are entertained at CRF. If done, please bring it to the notice of the Chairman-CRF.</p>
+    
+                            <p>13. If any facility is booked and analysis is could not be done, beyond the limits of CRF personal, CRF cannot be held responsible in any way.</p>
+    
+    
+    
+                        </div>
+    
+    
+    
+    
+    
+                </div>
+    
+            </div>
+    </div>
+    
+    <div id="ext-indus-section" class="vis">
+        <div class="container mt-3">
+                <!-- <div class="user-btns">
+                    <a href="exter-acad.html" class="btn btn-primary" role="button" data-bs-toggle="button">External User</a>
+                    <a href="exter-industry.html" class="btn btn-primary" role="button" data-bs-toggle="button">External User (Insustries)</a>
+                    <a href="inter-user.html" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Inrernal User</a>
+                </div> -->
+    
+                <div class="external-user">
+                    <h1 class="text-center fw-bold font_PT_sans">
+                        External User (Industries)
+                    </h1>
+                    <div class="external-user-def mb-4 mt-4">
+                        <center>
+                            <p class="font_PT_sans">All users affiliated to institutions/industries working on commercial basis come under this category.</p>
+                        </center>
+                    </div>
+    
+                    <h3 class="text-center fw-bold">Procedure for Slot booking</h3>
+                        <div class="steps-img">
+                            <%=image_tag 'mainUsers\ExtIndusFlow.png' %>
+                        </div>
+    
+                        <div class="ext-procedure">
+                            <p>1. Slot booking form available under the BOOK SLOT tab. Please note each machine has it’s own slot booking form.</p>
+    
+                            <p>2. Fill up the form with the details and submit along with the Request letter. Request letter should be forwarded/ recommended by the section head or institutional head.</p>
+    
+                            <p>3. Scanned copies of the request letter along with slot form should be sent to booking.crf@nitk.edu.in. Samples of hazardous, poisonous and biological nature should be explicitly stated.</p>
+    
+                            <p>4. An email communication will be sent for the slot date/time allotment booking. Only allotted users will be sent email. Users are requested to send the samples in time (for some facilities, samples need to be sent in advance). Once booked, last minute cancellation is strictly forbidden.</p>
+    
+                            <p>5.  Data and samples will be given after the payment. For details of costs for different tests, it is suggested to look into the respective facilities.</p>
+    
+                            <p>6.  If the user wants to visit the CRF during analysis, it is suggested that they should come with his ID card/Aadhar card and the email confirmation for identification purpose.</p>
+    
+                            <p>7. The users are required to follow the instructions related to machine safety, sample preparation guidelines applicable to particular machines, etc. For CRF staff, keeping machine intact is equally important as the analyses of samples.</p>
+    
+                            <p>8.  Sample preparation is not covered in machine charges. It is the responsibility of the user to prepare samples and get into CRF at correct time. If slot is given and user is not able to use the slot due to sample is not ready or prepared badly, CRF will not be responsible.</p>
+    
+                            <p>9.   All the users are requested to cooperate with the CRF staff. In the event of any serious grievance users can to mail to CRF Chairman, giving full details</p>
+    
+                            <p>10. For a few facilities, sample preparation tools are available at CRF. These costs will be separate.</p>
+    
+                            <p>11. There will be additional GST charges. The GST value will be as per the prevailing rules.</p>
+    
+                            <p>12. No unfair means are entertained at CRF. If done, please bring it to the notice of the Chairman-CRF.</p>
+    
+                            <p>13. If any facility is booked and analysis is could not be done, beyond the limits of CRF personal, CRF cannot be held responsible in any way.</p>
+    
+    
+    
+                        </div>
+    
+    
+    
+    
+    
+                </div>
+    
+            </div>
+    </div>
+    
+    <!-- footer section -->
+    
+    <%=render "partials/newFooter" %>
 </div>
-
-<!-- footer section -->
-
-<%=render "partials/mainpage_footer" %>
 
 
 

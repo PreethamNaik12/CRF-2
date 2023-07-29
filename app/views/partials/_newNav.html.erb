@@ -1,5 +1,12 @@
+
+<%= stylesheet_link_tag "newLand" %>
+<%= stylesheet_link_tag "newLandResp" %>
+
+
 <div class="background font_PT_sans">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Thirteenth navbar example"
+    
+    
+    <nav class="navbar navbar-expand-lg  rounded" aria-label="Thirteenth navbar example"
         id="user_present">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hello_2"
@@ -11,7 +18,7 @@
             </a>
             <div class="d-lg-flex col-lg-3 justify-content-lg-end" id="collapse_login">
                 <div>
-                    <div id="user_link"><%= image_tag "logoT.png", id:"user_img_1" %></div>
+                   <div id="user_link"><%= image_tag "logoT.png", id:"user_img_1" %></div>
                 </div>
             </div>
 
@@ -25,13 +32,13 @@
                         <%= link_to "Home", mainpage_navbar_path, class:"nav-link" %>
                     </div>
                     <div class="nav-item">
-                        <a class="nav-link" href="#">Facilities</a>
+                        <%= link_to "Facilities", mainpage_facility_path, class:'nav-link' %>
                     </div>
                     <div class="nav-item">
-                        <a class="nav-link" href="#">People</a>
+                        <%= link_to "People", mainpage_people2_path,  class:'nav-link' %>
                     </div>
                     <div class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <%= link_to "About us", mainpage_about_us_path, class:'nav-link' %>
                     </div>
                     <div class="nav-item">
                         <a class="nav-link" href="#" id="book_slot">Book Slot</a>
@@ -46,7 +53,9 @@
             </div>
         </div>
     </nav>
+    
 
+    <!--
     <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Thirteenth navbar example">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hello_1"
@@ -65,24 +74,25 @@
                 </a>
                 <div class="navbar-nav col-lg-6 justify-content-lg-center" id="nav_grid_2">
                     <div class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <%= link_to "Home", mainpage_navbar_path, class:"nav-link" %>
                     </div>
                     <div class="nav-item">
-                        <a class="nav-link" href="#">Facilities</a>
+                        <%= link_to "Facilities", mainpage_facility_path, class:'nav-link' %>
                     </div>
                     <div class="nav-item">
-                        <a class="nav-link" href="#">People</a>
+                        <%= link_to "People", mainpage_people2_path, class:'nav-link'%>
                     </div>
                     <div class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <%= link_to "About us", mainpage_about_us_path, class:'nav-link' %>
                     </div>
                 </div>
                 <div class="d-lg-flex col-lg-3 justify-content-lg-end" id="non_collapse_login">
-                    <button class="btn btn-primary">Login</button>
+                    <%= link_to "Login", new_user_session_path, class:'btn btn-primary' %>
                 </div>
             </div>
         </div>
     </nav>
+    -->
 
 
     <div id="profile_options">
@@ -92,12 +102,13 @@
             <li class="option"><a href="#">Log Out</a></li>
         </ul>
     </div>
+</div>
 
     <script>
         let user_img_1 = document.getElementById("user_img_1");
         let user_img_2 = document.getElementById("user_img_2");
         let profile_options = document.getElementById("profile_options");
-        let count = 0;
+        let count = 1;
         user_img_1.addEventListener("click",()=> {
            if (count%2 === 0){ 
                 profile_options.style.display = "none";
